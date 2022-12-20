@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+:root {
+    --lato : 'Lato', sans-serif;
+}
+
+body {
+    font-family: var(--lato);
+}
+
+#sms-body {
+    display: flex;
+    flex-direction: column;
+}
+.message {
+    font-size: 1rem; 
+    padding: 0.5rem;
+    border-radius: 0.7rem;
+    max-width: 30ch;
+    margin-block: 0.4rem;
+    min-width: 4rem;
+}
+
+#today {
+    align-self: center;
+}
+
+.them {
+    background-color: rgb(185, 185, 185);
+    align-self: flex-start;
+    
+    color: black;
+}
+
+.me {
+    background-color: rgb(81, 81, 164);
+    align-self: flex-end;
+    color: aliceblue;
+}
+
+#response-entry {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    bottom: 1.5rem;
+}
+
+#send {
+    width: 2rem;
+    height: 2rem;
+}
+
+#sms-reply {
+    width: 20rem;
+    height: 2rem;
+    border-radius: 1.1rem;
+}
