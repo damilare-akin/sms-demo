@@ -15,6 +15,10 @@ form.addEventListener('submit', async function (e) {
     container.style.opacity = 0.5
 });
 
+document.body.addEventListener('click', function(e) {
+    modal.style.display = 'none'
+    container.style.opacity = 1
+})
 
 async function postData() {
 
