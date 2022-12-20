@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sms screen</title>
     <link rel="stylesheet" href="css/sms.css">
+    <script src="js/sms.js" async></script>
 </head>
 
 <body>
@@ -18,16 +19,13 @@
                 First Bank would like to verify your BVN. Send Y for yes or N for no.
             </div>
 
-            <div class="message me">
-                Y
-            </div>
         </div>
     </div>
     <div id="response-entry">
-        <form action="" method="post">
+        <form action="" method="post" id="sms-box">
             <input type="text" name="sms-reply" id="sms-reply">
         </form>
-        <img src="icons/send.png" alt="arrow" id="send">
+        <img src="icons/send.png" alt="arrow" onclick="send ()" id="send">
     </div>
 </body>
 

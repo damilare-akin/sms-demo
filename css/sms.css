@@ -6,6 +6,10 @@
 
 body {
     font-family: var(--lato);
+    display: grid;
+    grid-template-rows: 10% 80% 10%;
+    height: 100vh;
+    margin: 0;
 }
 
 #sms-body {
@@ -13,12 +17,16 @@ body {
     flex-direction: column;
 }
 .message {
-    font-size: 1rem; 
+    font-size: 1.1rem; 
     padding: 0.5rem;
     border-radius: 0.7rem;
     max-width: 30ch;
     margin-block: 0.4rem;
-    min-width: 4rem;
+    min-width: 3rem;
+}
+
+#topbar {
+    background-color: rgb(185, 185, 185);
 }
 
 #today {
@@ -42,17 +50,26 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    position: fixed;
+    /* position: fixed; */
     bottom: 1.5rem;
+    justify-content: space-around;
+    width: 100%;
 }
 
 #send {
     width: 2rem;
     height: 2rem;
+    margin-inline: 0.3rem;
+    cursor: pointer;
 }
 
 #sms-reply {
-    width: 20rem;
     height: 2rem;
-    border-radius: 1.1rem;
+    width: 20rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+}
+
+#container {
+    padding: 1rem;
 }
