@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+:root {
+    --lato : 'Lato', sans-serif;
+    --bgcolor: rgba(87, 71, 71, 0.816);
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: var(--bgcolor);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--lato);
+    width: 100%;
+}
+
+#modal {
+    position: fixed;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 20rem; */
+    height: 10rem;
+    background-color: white;
+    padding: 2rem;
+    display: none;
+    text-align: center;
+    z-index: 5;
+}
+
+#message-header {
+    font-weight: 800;
+    font-size: 1.5rem;
+    margin-block-end:1rem;
+}
+
+#message-details{
+    /* text-align: center; */
+}
+
+button {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    border-radius: 0.4rem;
+    margin-block: 1rem;
+    border: 0.2rem solid rgba(255, 68, 0, 0.592);
+    box-shadow: 0.1rem 0.2rem rgba(64, 18, 1, 0.284);;
+    width: 30%;
+    align-self: center;
+}
+
+button:hover {
+    cursor: pointer;
+    color: white;
+    background-color: rgb(17, 41, 41);
+    border: 0.2rem solid white;
+}
+
+input {
+    width: 20rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    margin-block: 0.5rem;
+    border-radius: 0.4rem;
+    padding-inline: 0.3rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    text-transform: capitalize;
+    color: whitesmoke;
+    font-weight: 500;
+}
